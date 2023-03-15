@@ -1,0 +1,223 @@
+.header {
+    width: 100%;
+    /* Ширина блока */
+    padding: 10px;
+    /* Поля вокруг текста */
+    text-align: center;
+    font-size: 24px;
+    font-weight: 300;
+    /*насыщенность*/
+    color: white;
+    background-color: #493224;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+.header_a {
+    color: inherit;
+    text-decoration: none;
+    /*удаляем ссылку*/
+}
+
+.sticky {
+    width: 80%;
+    /* Ширина блока */
+    padding: 10px;
+    /* Поля вокруг текста */
+    text-align: center;
+    background-color: black;
+    color: aliceblue;
+    /* position: -webkit-sticky;
+    position: sticky; */
+    top: 0;
+}
+
+/*------------------------------------------------Flex--------------------------------------------*/
+
+.flex-container {
+    display: flex;
+    /* flex || inline-flex */
+    justify-content: space-between;
+    /*горизонтальное выравнивае элементов с равными промежутками*/
+    width: 100%;
+    padding: 10px;
+}
+
+.col {
+    position: relative;
+    padding: 10px;
+    /* Поля вокруг текста */
+    margin-right: 10px;
+    /* Отступ справа */
+    /* border: 1px solid black; Параметры рамки */
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 20px;
+}
+
+.col_nav {
+    position: -webkit-sticky;
+    /* for Safari */
+    position: sticky;
+    box-sizing: border-box;
+    top: 0px;
+    align-self: flex-start;
+    /*выравнивание flex-элемента вдоль направления поперечной оси*/
+    flex-basis: 14%;
+    /* Ширина блока */
+}
+
+.col_article {
+    /* background: gray; Цвет фона */
+    /*flex-basis: 70%;*/
+    flex-basis: 60%;
+    /* Ширина блока */
+    align-self: stretch;
+    /*выравнивание flex-элемента вдоль направления поперечной оси*/
+}
+
+.col_aside {
+    /* position: -webkit-sticky; 
+    position: sticky;
+    top: 0px; */
+    /*flex-basis: 5%; /* Ширина блока */
+    position: relative;
+    align-self: flex-start;
+    /*выравнивание flex-элемента вдоль направления поперечной оси*/
+    flex-basis: 26%;
+    /* Ширина блока */
+}
+
+/*---------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------- Nav items ----------------------------------------------*/
+
+.nav_items {
+    list-style: none;
+    padding: 0;
+}
+
+.nav_items li {
+    padding: 7px 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border-left: 10px solid #493224;
+    box-shadow: 2px -2px 5px 0 rgba(0, 0, 0, .1),
+        -2px -2px 5px 0 rgba(0, 0, 0, .1),
+        2px 2px 5px 0 rgba(0, 0, 0, .1),
+        -2px 2px 5px 0 rgba(0, 0, 0, .1);
+    font-size: 15px;
+    letter-spacing: 2px;
+    transition: 0.3s all linear;
+}
+
+
+.nav_items li:hover {
+    border-left: 10px solid transparent;
+}
+
+.nav_items li:nth-child(1):hover {
+    border-right: 10px solid #493224;
+}
+
+.nav_items li:nth-child(2):hover {
+    border-right: 10px solid #493224;
+}
+
+.nav_items li:nth-child(3):hover {
+    border-right: 10px solid #493224;
+}
+
+.nav_items li:nth-child(4):hover {
+    border-right: 10px solid #493224;
+}
+
+.nav_items li:nth-child(5):hover {
+    border-right: 10px solid #493224;
+}
+
+.nav_items a {
+    text-decoration: none;
+    /*удаляем ссылку*/
+    color: black;
+}
+
+/*---------------------------------------------------------------------------------------------------*/
+.cert-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 96%;
+    padding: 10px;
+    align-content: space-around;
+    justify-content: space-between;
+    /*горизонтальное выравнивае элементов с равными промежутками*/
+    /* border: 1px solid black; */
+}
+
+.col-cert {
+    border: 3px solid #493224;
+    /* Параметры рамки */
+    border-radius: 4px;
+    /* flex: 0 0 32%;
+    max-width: 32%;
+    height:fit-content; */
+    flex: 0 0 32%;
+    max-width: 32%;
+}
+
+.col-cert img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s;
+}
+
+.col-cert:hover img {
+    transform: scale(1.2);
+}
+
+.cert-image {
+    width: 100%;
+    height: 100%;
+    /* border-radius: 30% 70% 38% 62% / 45% 47% 53% 55% ; */
+}
+
+/*---------------------------------------------------------------------------------------------------*/
+
+.col_footer {
+    /* border: 1px solid black; Параметры рамки */
+    flex-basis: 25%;
+    font-size: 16px;
+}
+
+.footer {
+    /* background: rosybrown; Цвет фона */
+    border: 1px solid black;
+    /* Параметры рамки */
+    padding: 10px;
+    /* Поля вокруг текста */
+    margin-right: 20px;
+    /* Отступ справа */
+    width: 100%;
+    /* Ширина блока */
+}
+
+.person_box,
+.cert_box {
+    position: relative;
+    top: 70px;
+    text-align: center;
+}
+
+.image {
+    width: 70%;
+    height: 70%;
+    border: 3px solid white;
+    border-radius: 10px;
+    /* border-radius: 30% 70% 38% 62% / 45% 47% 53% 55% ; */
+}
+
+.image:hover {
+    border: 3px solid #493224;
+    /* Ширина, вид и цвет рамки */
+    filter: grayscale(1);
+    /*Черно-белый фильтр для изображения */
+    transition: 1s;
+    /* Время изменения цвета изображения */
+}
