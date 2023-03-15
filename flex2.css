@@ -133,6 +133,10 @@
     border-right: 10px solid #493224;
 }
 
+.nav_items li:nth-child(6):hover {
+    border-right: 10px solid #493224;
+}
+
 .nav_items a {
     text-decoration: none;
     /*удаляем ссылку*/
